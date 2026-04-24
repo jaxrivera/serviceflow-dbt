@@ -1,0 +1,5 @@
+site_id,site_name,region,budgeted_labor_amount
+S-101,Irvine Medical Center,West,5000
+S-102,San Diego Data Center,West,12000
+S-103,Boston Logistics Hub,East,8500
+S-104,Austin Retail Plaza,South,4200

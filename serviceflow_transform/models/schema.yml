@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_work_orders
+    columns:
+      - name: wo_id
+        tests:
+          - unique
+          - not_null
+      - name: hours_logged
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 24
+
+  - name: fct_job_profitability
+    columns:
+      - name: site_name
+        tests:
+          - not_null

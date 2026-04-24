@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: internal_erp
+    description: "Raw transactional data from the field service ERP."
+    database: service_db
+    schema: gold_service_ops
+    tables:
+      - name: fct_work_orders
+        description: "Direct feed of technician work orders."
